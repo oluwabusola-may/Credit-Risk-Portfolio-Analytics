@@ -1,5 +1,5 @@
 [README (4).md](https://github.com/user-attachments/files/29429554/README.4.md)
-# Credit-Bureau-Analysis# 🏦 Nigerian Credit Bureau — End-to-End Data Analytics Portfolio Project
+# Credit-Risk-Portfolio-Analytics — End-to-End Data Analytics Portfolio Project
 
 ![Project Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![Tools](https://img.shields.io/badge/Tools-Excel%20%7C%20MySQL%20%7C%20Power%20BI-blue)
