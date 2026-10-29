@@ -1,4 +1,4 @@
-[README (4).md](https://github.com/user-attachments/files/29429554/README.4.md)
+[README.md](https://github.com/user-attachments/files/34119918/README.md)
 # Credit-Risk-Portfolio-Analytics — End-to-End Data Analytics Portfolio Project
 
 ![Project Status](https://img.shields.io/badge/Status-Complete-brightgreen)
@@ -9,6 +9,8 @@
 ---
 
 ## 📌 Project Overview
+
+> **Synthetic data.** All 10,000 records were generated in Python for this project; no real customers or lenders are involved. The 33% default rate is deliberately high to create a story to analyse and is **not** a benchmark for the Nigerian lending market. The project demonstrates the analyst workflow, not market findings.
 
 This is an end-to-end data analytics portfolio project simulating a real-world credit bureau analysis for a Nigerian financial institution. The project covers the full analyst workflow — from synthetic data generation and data cleaning, through SQL analysis, to an executive Power BI dashboard.
 
@@ -35,22 +37,14 @@ A Nigerian credit bureau needs to understand the health of its loan portfolio, i
 ## 🗂️ Project Structure
 
 ```
-nigerian-credit-bureau/
-│
-├── data/
-│   ├── credit_bureau_dataset.csv          # Raw dataset (with quality issues)
-│   └── credit_bureau_dataset_cleaned.csv  # Cleaned dataset
-│
-├── docs/
-│   ├── credit_bureau_project_guide.pdf    # Data dictionary, KPIs, SQL guide
-│   └── credit_bureau_cleaning_log.pdf     # Data cleaning documentation
-│
-├── sql/
-│   └── credit_bureau_queries.sql          # All 12 SQL queries (beginner → advanced)
-│
-├── dashboard/
-│   └── credit_bureau_visualization.pbix   # Power BI dashboard file
-│
+Credit-Risk-Portfolio-Analytics/
+├── Credit Bureau Raw Dataset              # Raw dataset (with quality issues)
+├── credit_bureau_dataset cleaned.csv      # Cleaned dataset
+├── credit_bureau_project_guide.pdf        # Data dictionary, KPIs, SQL guide
+├── credit_bureau_cleaning_log (1).pdf     # Data cleaning documentation
+├── Credit sql.txt                         # All 12 SQL queries (beginner → advanced)
+├── credit bureau visualization.pbix       # Power BI dashboard file
+├── Credit Bureau Dashboard.png            # Dashboard screenshot
 └── README.md
 ```
 
@@ -136,7 +130,7 @@ A single-page executive dashboard with 6 visuals and a recommendations section:
 |---|---|---|
 | KPI Cards | 5 metric cards | Portfolio health at a glance |
 | Zone 1 | Bar chart — Default Rate by State | Rivers State is the epicentre of default risk at 63.1% |
-| Zone 2 | Donut chart — Risk Category | 67.95% of customers are High Risk |
+| Zone 2 | Donut chart — Risk Category | 67.6% of customers are High Risk |
 | Zone 3 | Table — Pre-Default Watchlist | 785 customers at the brink of defaulting |
 | Zone 4 | Stacked bar — Delinquency by Loan Type | Personal and Mortgage loans drive the most delinquencies |
 | Zone 5 | Bar chart — Credit Score vs Default Rate | Lower credit scores are directly linked to higher default rates |
@@ -148,7 +142,7 @@ A single-page executive dashboard with 6 visuals and a recommendations section:
 
 ## 💡 Key Insights & Recommendations
 
-1. **Rivers State requires immediate intervention** — a 63.1% default rate, nearly double the 33.3% national average, signals a regional economic shock requiring tighter lending criteria and active collections.
+1. **Rivers State requires immediate intervention** — a 63.1% default rate, nearly double the 33.3% national average, would, in a real portfolio, justify tighter lending criteria and active collections. (Here it is a pattern built into the generated data.)
 
 2. **Personal and Mortgage loans drive the most delinquencies** — these two loan types account for the largest share of delinquent accounts and should be the primary focus for collections and underwriting review.
 
@@ -160,22 +154,22 @@ A single-page executive dashboard with 6 visuals and a recommendations section:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/nigerian-credit-bureau.git
+git clone https://github.com/oluwabusola-may/Credit-Risk-Portfolio-Analytics.git
 ```
 
 2. **Explore the data**
 ```python
 import pandas as pd
-df = pd.read_csv('data/credit_bureau_dataset_cleaned.csv')
+df = pd.read_csv('credit_bureau_dataset cleaned.csv')
 df.head()
 ```
 
 3. **Run the SQL queries**
 - Import `credit_bureau_dataset_cleaned.csv` into MySQL
-- Open `sql/credit_bureau_queries.sql` and run queries in MySQL Workbench
+- Open `Credit sql.txt` and run queries in MySQL Workbench
 
 4. **Open the dashboard**
-- Open `dashboard/credit_bureau_visualization.pbix` in Power BI Desktop
+- Open `credit bureau visualization.pbix` in Power BI Desktop
 - Refresh the data source to point to your local CSV path
 
 ---
@@ -186,8 +180,8 @@ df.head()
 
 This project was built as part of an ongoing data analytics portfolio series documented on LinkedIn.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/your-linkedin)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/oluwabusola-oyenuga)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/oluwabusola-may)
 
 ---
 
